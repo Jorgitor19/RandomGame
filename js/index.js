@@ -1,11 +1,22 @@
-//Variables
+//------------------------------------------------
+//                   Variables
+//------------------------------------------------
+
+
 //Declaramos una variable vacía que contendrá el número aleatorio.
+var numeroalmacenado;
 //Declaramos una variable que contenga el botón del HTML que va a comprobar el número.
+let botonparacomprobar = document.querySelector('#comprobar')
 //Declaramos una variable que contenga el botón del HTML que va a limpiar el localStorage.
+let borrardatos = document.querySelector('.borrarDatos')
 //Declaramos una variable que contenga el div del HTML que tendrá el texto de resultado.
+let textoresultado = document.querySelector('#resultado')
 //Declaramos una variable que contenga el div del HTML que tendrá el texto de estadísticas
+let textoestadisticas = document.querySelector('#estadisticas')
 //Declaramos una variable que contenga la obtención del valor de "exitosos" almacenado en el localStorage, agregamos un "or" para que se ponga como valor "0" si no existe aún dicha clave.
+let valorexitosos = localStorage.getItem('exitosos') || 0; 
 //Declaramos una variable que contenga la obtención del valor de "fallidos" almacenado en el localStorage, agregamos un "or" para que se ponga como valor "0" si no existe aún dicha clave.
+let valorfallidos = localStorage.getItem('fallidos') || 0;
 //Funciones
 //Función generadora del número
 //Declaramos una función que generará el número aleatorio.
