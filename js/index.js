@@ -17,14 +17,32 @@ let textoestadisticas = document.querySelector('#estadisticas')
 let valorexitosos = localStorage.getItem('exitosos') || 0; 
 //Declaramos una variable que contenga la obtención del valor de "fallidos" almacenado en el localStorage, agregamos un "or" para que se ponga como valor "0" si no existe aún dicha clave.
 let valorfallidos = localStorage.getItem('fallidos') || 0;
+
+
+
 //Funciones
+
+
+
 //Función generadora del número
+function generarNumeroAleatorio() { 
 //Declaramos una función que generará el número aleatorio.
+numeroalmacenado = Math.floor(Math.random() * 10); //
 //Le añade como valor a la variable que va a contener dicho número un random como número entero.
+console.info(numeroalmacenado);
+}
 //Función verificadora de número
+botonparacomprobar.addEventListener('click', verificarNumero)
+
+
+
 //Declaramos una función que comprobará el número que agreguemos.
+function verificarNumero() {}
+
 //Declaramos una variable local que coge el valor del input donde el usuario va a escribir su número.
+let numerojugador = document.querySelector('#numerojugador').value;
 //Ese valor lo transformamos en un número entero (parseInt).
+numerojugador = parseInt(numerojugador);
 //Si el número del usuario es estrictamente igual que el número almacenado en la variable que contiene el número aleatorio:
 //Aumentamos el valor de la variable que contiene el número de éxitos.
 //Guardamos el valor en el localStorage con la clave correspondiente al almacenamiento de éxitos.
