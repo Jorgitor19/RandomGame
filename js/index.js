@@ -60,7 +60,7 @@ function verificarnumero() {
         //Aumentamos el valor de la variable que contiene el número de fallidos.
         valorfallidos++;
         //Guardamos el valor en el localStorage con la clave correspondiente al almacenamiento de fallidos.
-        localStorage.setItem('fallidos', valorexitosos);
+        localStorage.setItem('fallidos', valorfallidos);
         //Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de resultado y agregamos el contenido que queramos. Por ejemplo "Fallaste".
         textoresultado.innerHTML = "<div> Has fallado, intentalo de nuevo.</div>";
         //Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de estadísticas para actualizar los valores de éxito y de fallidos.
