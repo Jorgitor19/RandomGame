@@ -64,18 +64,23 @@ function verificarnumero() {
         //Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de resultado y agregamos el contenido que queramos. Por ejemplo "Fallaste".
         textoresultado.innerHTML = "<div> Has fallado, intentalo de nuevo.</div>";
         //Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de estadísticas para actualizar los valores de éxito y de fallidos.
-        textoestadisticas.innerHTML = `Exitosos: ${valorfallidos}, Fallidos: ${intentosFallidos}`;
+        textoestadisticas.innerHTML = `Intentos buenos: ${valorexitosos}, Intentos Malos: ${valorfallidos}`;
     }
 }
 
 
 
 //Función limpiadora de datos
+borrardatos.addEventListener('click', borrartodosdatos)
 //Declaramos una función que se encargará de limpiar los datos del localStorage
+function borrartodosdatos() {
 //Usamos el método de localStorage para limpiar los datos.
+localStorage.clear()
 //Utilizamos "location.reload()" para reiniciar la página.
+location.reload();
 //Listeners
-//Botón comprobar
-//Creamos un addEventListener para que al hacer click en el botón de comprobar se active la función verificadora de número.
-//Botón limpiar
-//Creamos un addEventListener para que al hacer click en el botón de limpiar se active la función limpiadora de datos.
+
+}
+textoestadisticas.innerHTML = `Intentos buenos: ${valorexitosos}, Intentos Malos: ${valorfallidos}`;
+
+generarnumerorandom();
